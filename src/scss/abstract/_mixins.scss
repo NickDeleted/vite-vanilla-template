@@ -1,10 +1,10 @@
-@mixin desktop {
+@mixin xxl {
   @media screen and (max-width: $desktop) {
       @content;
   }
 }
 
-@mixin laptop {
+@mixin xl {
   @media screen and (max-width: $laptop) {
       @content;
   }
@@ -13,61 +13,43 @@
 @mixin large {
 @media screen and (max-width: $large) {
   @content;
-}
-}
-
-@mixin largetablet {
-@media screen and (max-width: $largetablet) {
-    @content;
-}
-}
-
-@mixin htablet {
-@media screen and (max-width: $htablet) {
-    @content;
-}
-}
-
-@mixin tablet {
-  @media screen and (max-width: $tablet) {
-      @content;
   }
 }
 
-@mixin smalltablet {
-@media screen and (max-width: $smalltablet) {
+@mixin medium {
+@media screen and (max-width: $medium) {
     @content;
-}
+  }
 }
 
 @mixin small {
 @media screen and (max-width: $small) {
     @content;
-}
+  }
 }
 
-@mixin smartphone {
-  @media screen and (max-width: $smartphone) {
+@mixin xs {
+  @media screen and (max-width: $xs) {
       @content;
   }
 }
 
-@mixin sp420 {
-@media screen and (max-width: $sp420) {
+@mixin xxs {
+@media screen and (max-width: $xxs) {
     @content;
-}
+  }
 }
 
-@mixin sp360 {
-@media screen and (max-width: $sp360) {
+@mixin xxxs {
+@media screen and (max-width: $xxxs) {
     @content;
-}
+  }
 }
 
-@mixin smallphone {
-@media screen and (max-width: $smallphone) {
+@mixin tiny {
+@media screen and (max-width: $tiny) {
     @content;
-}
+  }
 }
 
 // border gradient 
