@@ -5,7 +5,7 @@
 }
 
 @mixin xl {
-  @media screen and (max-width: $laptop) {
+  @media screen and (max-width: $xl) {
       @content;
   }
 }
