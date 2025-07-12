@@ -1,72 +1,55 @@
+@use 'variables' as *;
+
 @mixin xxl {
   @media screen and (max-width: $bp-xxl) {
-      @content;
+    @content;
   }
 }
 
 @mixin xl {
   @media screen and (max-width: $bp-xl) {
-      @content;
+    @content;
   }
 }
 
 @mixin large {
-@media screen and (max-width: $bp-large) {
-  @content;
+  @media screen and (max-width: $bp-large) {
+    @content;
   }
 }
 
 @mixin medium {
-@media screen and (max-width: $bp-medium) {
+  @media screen and (max-width: $bp-medium) {
     @content;
   }
 }
 
 @mixin small {
-@media screen and (max-width: $bp-small) {
+  @media screen and (max-width: $bp-small) {
     @content;
   }
 }
 
 @mixin xs {
   @media screen and (max-width: $bp-xs) {
-      @content;
+    @content;
   }
 }
 
 @mixin xxs {
-@media screen and (max-width: $bp-xxs) {
+  @media screen and (max-width: $bp-xxs) {
     @content;
   }
 }
 
 @mixin xxxs {
-@media screen and (max-width: $bp-xxxs) {
+  @media screen and (max-width: $bp-xxxs) {
     @content;
   }
 }
 
 @mixin tiny {
-@media screen and (max-width: $bp-tiny) {
+  @media screen and (max-width: $bp-tiny) {
     @content;
   }
 }
-
-// border gradient 
-
-@mixin border-gradient($from, $to, $weight: 0) {
-$mix-main: mix($from, $to);
-$mix-sub-from: mix($mix-main, $from);
-$mix-sub-to: mix($mix-main, $to);
-
-box-shadow: 0 1px 0 $weight rgba($mix-sub-to, .25),
-            0 -1px 0 $weight rgba($mix-sub-from, .25),
-            1px 0 0 $weight rgba($mix-sub-to, .25),
-            -1px 0 0 $weight  rgba($mix-sub-from, .25),
-            1px -1px 0 $weight rgba($mix-main, .5),
-            -1px 1px 0 $weight rgba($mix-main, .5),
-            1px 1px 0 $weight rgba($to, .75),
-            -1px -1px 0 $weight rgba($from, .75);
-}
-
-
